@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatfinder</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link href="./assets/icons/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+  <link href="./assets/icons/fontawesome/css/brands.min.css" rel="stylesheet">
+  <link href="./assets/icons/fontawesome/css/solid.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./assets/plugin/aos/aos.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="header-section">
+        <header id="header" class="header d-flex align-items-center fixed-top">
+            <div class="container-fluid container-xl position-relative d-flex justify-content-between align-items-center">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/images/logo.png" alt="logo">
+              </a>
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="index.html#hero">Home</a></li>
+                  <li><a href="index.html#featured">Featured</a></li>
+                  <li><a href="index.html#HoliPackages">Holiday Packages</a></li>
+                  <li><a href="index.html#testimonial">Contact Us</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none fas fa-bars"></i>
+              </nav>
+              <a href="#" class="btn bg-primary text-white border-0 join-btn btn-hover d-none d-lg-block ">Login</a>
+            </div>
+          </header>
+            <div class="hero-section mt-6" id="hero">
+              <div class="container-fluid container-xl position-relative mt-7 overflow-hidden">
+                <div class="row">
+                  <div class="col-lg-6">
+                      <h1 class="display-4 fw-bold text-navy mb-3 text-primary font-weight-600">Buy, Sell, Rent.</h1>
+                      <p class="fs-5 mb-4 text-primary font-weight-600">The best deals, for both Realtors<br>and Customers.</p>
+                      <a href="#" class="explore-more mb-5">
+                          Explore More
+                          <svg width="25" height="14" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41.6944 12.9142C42.2802 12.3284 42.2802 11.3786 41.6944 10.7929L32.1485 1.24691C31.5627 0.661127 30.613 0.661127 30.0272 1.24691C29.4414 1.8327 29.4414 2.78245 30.0272 3.36823L38.5125 11.8535L30.0272 20.3388C29.4414 20.9246 29.4414 21.8743 30.0272 22.4601C30.613 23.0459 31.5627 23.0459 32.1485 22.4601L41.6944 12.9142ZM0.0722656 13.3535H40.6338V10.3535H0.0722656V13.3535Z" fill="#FF5722"/>
+                          </svg>                            
+                      </a>
+                  </div>
+              </div>
+              </div>      
+            </div>
+
+            <div class="search-section">
+              <div class="container-fluid container-xl position-relative search-card">
+                <div class="row">
+                  <div class="col-12">
+                      <div>
+                          <h2 class="h4 mb-4 search-section-title">WHAT DO YOU NEED?</h2>
+                          <div class="row g-3">
+                              <div class="col-md-4">
+                                  <label for="form-label">Location</label>
+                                  <select class="form-select">
+                                      <option selected>Lagos, Nigeria</option>
+                                      <!-- Add more options -->
+                                  </select>
+                              </div>
+                              <div class="col-md-4">
+                                <label for="form-label">Category</label>
+                                  <select class="form-select">
+                                      <option selected>3 Bedroom Duplex</option>
+                                      <!-- Add more options -->
+                                  </select>
+                              </div>
+                              <div class="col-md-4">
+                                <label for="form-label">Budget</label>
+                                  <select class="form-select">
+                                      <option selected>50,000-150,000</option>
+                                      <!-- Add more options -->
+                                  </select>
+                              </div>
+                              <div class="col-12 text-center mt-4">
+                                      <button class="btn search-btn text-white">
+                                        Search MiCasa
+                                        <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+       </div>
+
+      <div class="section-how-to-work">
+        <div class="container-fluid container-xl pt-6 pb-5">
+            <h2 class="text-center mb-5 font-weight-700 text-color-1">How It Works</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="d-flex">
+                    <div class="me-4">
+                      <div class="how-it-works-icon">
+                        <img src="./assets/icons/1.png" alt="Find">
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="h5 m-0 work-section-title font-weight-700 text-color-1">Find A Listing</h3>
+                      <p class="text-color-1 m-0 work-section-sub-text font-weight-400">Make a choice of the type of apartment and guidance that appeal to your interest.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="d-flex">
+                    <div class="me-4">
+                      <div class="how-it-works-icon">
+                        <img src="./assets/icons/2.png" alt="Find">
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="h5 m-0 work-section-title font-weight-700 text-color-1">Talk to an Agent</h3>
+                      <p class="text-color-1 m-0 work-section-sub-text font-weight-400 ">Our Agents are available 24 hours Mon-Sat</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="d-flex">
+                    <div class="me-4">
+                      <div class="how-it-works-icon">
+                        <img src="./assets/icons/3.png" alt="Find">
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="h5 m-0 work-section-title font-weight-700 text-color-1">Set the date and Move in!</h3>
+                      <p class="m-0 work-section-sub-text font-weight-400 text-color-1">Make payment, get your keys and all other important documents, set your move-in date.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="section-featured mt-7" id="featured">
+        <div class="container-fluid container-xl py-5">
+          <div class="d-flex flex-column flex-md-row justify-content-start justify-content-md-between justify-content-lg-between align-items-start align-items-md-center align-items-lg-center mb-4">
+               <div class="mb-5 mb-md-0 mb-lg-0">
+                 <h2 class="mb-0 font-weight-700 text-primary before-border">Featured Houses</h2>
+               </div>
+               <div>
+                <ul class="nav nav-pills" id="propertyTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="house-tab" data-bs-toggle="pill" data-bs-target="#house" type="button" role="tab" aria-controls="house" aria-selected="true">
+                        <i class="fas fa-home"></i> House
+                      </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="villa-tab" data-bs-toggle="pill" data-bs-target="#villa" type="button" role="tab" aria-controls="villa" aria-selected="false">
+                          <i class="fas fa-building"></i> Villa
+                      </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="apartment-tab" data-bs-toggle="pill" data-bs-target="#apartment" type="button" role="tab" aria-controls="apartment" aria-selected="false">
+                          <i class="fas fa-city"></i> Apartment
+                      </button>
+                  </li>
+              </ul>
+              </div>
+               <div class="d-none d-md-none d-lg-block"></div>
+          </div>
+          <div class="tab-content mt-5" id="propertyTabsContent">
+              <div class="tab-pane fade show active" id="house" role="tabpanel" aria-labelledby="house-tab">
+                  <div class="g-4 property-carousel owl-carousel owl-theme">
+                      <!-- House 1 -->
+                      <div class="item">
+                          <div class="card property-card border-0 p-3 m-3">
+                              <div class="position-relative d-flex justify-content-center align-items-center">
+                                  <img src="./assets/images/2.jpg" class="card-img-item" alt="House in Ikeja">
+                                  <span class="badge badge-house position-absolute"><i class="fas fa-home"></i><span class="ms-2">New House</span></span>
+                              </div>
+                              <div class="card-body">
+                                  <div class="d-flex justify-content-between align-items-center mb-2">
+                                      <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                                      <div>
+                                          <i class="fas fa-wifi"></i>
+                                          <i class="fas fa-water ms-2"></i>
+                                      </div>
+                                  </div>
+                                  <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                                  <div class="d-flex align-items-center">
+                                      <div class="avatar-group ms-3">
+                                        <div class="avatar">
+                                          <img src="./assets/images/15.png" alt="Avatar 1">
+                                        </div>
+                                        <div class="avatar">
+                                          <img src="./assets/images/16.png" alt="Avatar 2">
+                                        </div>
+                                        <div class="avatar">
+                                          <img src="./assets/images/17.png" alt="Avatar 3">
+                                        </div>
+                                        <div class="total-customer">+25k</div>
+                                      </div>
+                                      <span class="ms-2 text-muted small">have interest in this property</span>
+                                    </div>
+                                    <button class="btn-view-more">
+                                      View More 
+                                      <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                                      </svg>  
+                                    </button>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- House 2 -->
+                      <div class="item">
+                        <div class="card property-card border-0 p-3 m-3">
+                          <div class="position-relative d-flex justify-content-center align-items-center">
+                              <img src="./assets/images/3.jpg" class="card-img-item" alt="House in Ikeja">
+                              <span class="badge badge-popular position-absolute"><i class="fas fa-tint"></i><span class="ms-2">Popular</span></span>
+
+                          </div>
+                          <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                                  <div>
+                                      <i class="fas fa-wifi"></i>
+                                      <i class="fas fa-water ms-2"></i>
+                                  </div>
+                              </div>
+                              <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                              <div class="d-flex align-items-center">
+                                  <div class="avatar-group ms-3">
+                                    <div class="avatar">
+                                      <img src="./assets/images/15.png" alt="Avatar 1">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/16.png" alt="Avatar 2">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/17.png" alt="Avatar 3">
+                                    </div>
+                                    <div class="total-customer">+25k</div>
+                                  </div>
+                                  <span class="ms-2 text-muted small">have interest in this property</span>
+                                </div>
+                                <button class="btn-view-more">
+                                  View More
+                                  <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                                  </svg> 
+                                </button>
+                          </div>
+                      </div>
+                      </div>
+                       <!-- House 3 -->
+                       <div class="item">
+                        <div class="card property-card border-0 p-3 m-3">
+                          <div class="position-relative d-flex justify-content-center align-items-center">
+                              <img src="./assets/images/4.jpg" class="card-img-item" alt="House in Ikeja">
+                          </div>
+                          <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                                  <div>
+                                      <i class="fas fa-wifi"></i>
+                                      <i class="fas fa-water ms-2"></i>
+                                  </div>
+                              </div>
+                              <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                              <div class="d-flex align-items-center">
+                                  <div class="avatar-group ms-3">
+                                    <div class="avatar">
+                                      <img src="./assets/images/15.png" alt="Avatar 1">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/16.png" alt="Avatar 2">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/17.png" alt="Avatar 3">
+                                    </div>
+                                    <div class="total-customer">+25k</div>
+                                  </div>
+                                  <span class="ms-2 text-muted small">have interest in this property</span>
+                                </div>
+                                <button class="btn-view-more">
+                                  View More
+                                  <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                                  </svg> 
+                                </button>
+                          </div>
+                      </div>
+                      </div>
+                       <!-- House 4 -->
+                       <div class="item">
+                        <div class="card property-card border-0 p-3 m-3">
+                          <div class="position-relative d-flex justify-content-center align-items-center">
+                              <img src="./assets/images/5.jpg" class="card-img-item" alt="House in Ikeja">
+                              <span class="badge badge-house position-absolute"><i class="fas fa-home"></i><span class="ms-2">New House</span></span>
+                            
+                          </div>
+                          <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                                  <div>
+                                      <i class="fas fa-wifi"></i>
+                                      <i class="fas fa-water ms-2"></i>
+                                  </div>
+                              </div>
+                              <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                              <div class="d-flex align-items-center">
+                                  <div class="avatar-group ms-3">
+                                    <div class="avatar">
+                                      <img src="./assets/images/15.png" alt="Avatar 1">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/16.png" alt="Avatar 2">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/17.png" alt="Avatar 3">
+                                    </div>
+                                    <div class="total-customer">+25k</div>
+                                  </div>
+                                  <span class="ms-2 text-muted small">have interest in this property</span>
+                                </div>
+                                <button class="btn-view-more">
+                                  View More
+                                  <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                                  </svg> 
+                                </button>
+                          </div>
+                      </div>
+                      </div>
+                       <!-- House 5 -->
+                       <div class="item">
+                        <div class="card property-card border-0 p-3 m-3">
+                          <div class="position-relative d-flex justify-content-center align-items-center">
+                              <img src="./assets/images/5.jpg" class="card-img-item" alt="House in Ikeja">
+                              <span class="badge badge-house position-absolute"><i class="fas fa-home"></i><span class="ms-2">New House</span></span>
+                            
+                          </div>
+                          <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                                  <div>
+                                      <i class="fas fa-wifi"></i>
+                                      <i class="fas fa-water ms-2"></i>
+                                  </div>
+                              </div>
+                              <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                              <div class="d-flex align-items-center">
+                                  <div class="avatar-group ms-3">
+                                    <div class="avatar">
+                                      <img src="./assets/images/15.png" alt="Avatar 1">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/16.png" alt="Avatar 2">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/17.png" alt="Avatar 3">
+                                    </div>
+                                    <div class="total-customer">+25k</div>
+                                  </div>
+                                  <span class="ms-2 text-muted small">have interest in this property</span>
+                                </div>
+                                <button class="btn-view-more">
+                                  View More
+                                  <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                                  </svg> 
+                                </button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="villa" role="tabpanel" aria-labelledby="villa-tab">
+                <div class="g-4 property-carousel owl-carousel owl-theme">
+                  <!-- House 1 -->
+                  <div class="item">
+                      <div class="card property-card border-0 p-3 m-3">
+                          <div class="position-relative d-flex justify-content-center align-items-center">
+                              <img src="./assets/images/2.jpg" class="card-img-item" alt="House in Ikeja">
+                              <span class="badge badge-house position-absolute"><i class="fas fa-home"></i><span class="ms-2">New House</span></span>
+                          </div>
+                          <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                                  <div>
+                                      <i class="fas fa-wifi"></i>
+                                      <i class="fas fa-water ms-2"></i>
+                                  </div>
+                              </div>
+                              <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                              <div class="d-flex align-items-center">
+                                  <div class="avatar-group ms-3">
+                                    <div class="avatar">
+                                      <img src="./assets/images/15.png" alt="Avatar 1">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/16.png" alt="Avatar 2">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/17.png" alt="Avatar 3">
+                                    </div>
+                                    <div class="total-customer">+25k</div>
+                                  </div>
+                                  <span class="ms-2 text-muted small">have interest in this property</span>
+                                </div>
+                                <button class="btn-view-more">
+                                  View More 
+                                  <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                                  </svg>  
+                                </button>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- House 2 -->
+                  <div class="item">
+                    <div class="card property-card border-0 p-3 m-3">
+                      <div class="position-relative d-flex justify-content-center align-items-center">
+                          <img src="./assets/images/3.jpg" class="card-img-item" alt="House in Ikeja">
+                          <span class="badge badge-popular position-absolute"><i class="fas fa-tint"></i><span class="ms-2">Popular</span></span>
+
+                      </div>
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                              <div>
+                                  <i class="fas fa-wifi"></i>
+                                  <i class="fas fa-water ms-2"></i>
+                              </div>
+                          </div>
+                          <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                          <div class="d-flex align-items-center">
+                              <div class="avatar-group ms-3">
+                                <div class="avatar">
+                                  <img src="./assets/images/15.png" alt="Avatar 1">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/16.png" alt="Avatar 2">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/17.png" alt="Avatar 3">
+                                </div>
+                                <div class="total-customer">+25k</div>
+                              </div>
+                              <span class="ms-2 text-muted small">have interest in this property</span>
+                            </div>
+                            <button class="btn-view-more">
+                              View More
+                              <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                              </svg> 
+                            </button>
+                      </div>
+                  </div>
+                  </div>
+                   <!-- House 3 -->
+                   <div class="item">
+                    <div class="card property-card border-0 p-3 m-3">
+                      <div class="position-relative d-flex justify-content-center align-items-center">
+                          <img src="./assets/images/4.jpg" class="card-img-item" alt="House in Ikeja">
+                      </div>
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                              <div>
+                                  <i class="fas fa-wifi"></i>
+                                  <i class="fas fa-water ms-2"></i>
+                              </div>
+                          </div>
+                          <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                          <div class="d-flex align-items-center">
+                              <div class="avatar-group ms-3">
+                                <div class="avatar">
+                                  <img src="./assets/images/15.png" alt="Avatar 1">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/16.png" alt="Avatar 2">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/17.png" alt="Avatar 3">
+                                </div>
+                                <div class="total-customer">+25k</div>
+                              </div>
+                              <span class="ms-2 text-muted small">have interest in this property</span>
+                            </div>
+                            <button class="btn-view-more">
+                              View More
+                              <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                              </svg> 
+                            </button>
+                      </div>
+                  </div>
+                  </div>
+                   <!-- House 4 -->
+                   <div class="item">
+                    <div class="card property-card border-0 p-3 m-3">
+                      <div class="position-relative d-flex justify-content-center align-items-center">
+                          <img src="./assets/images/5.jpg" class="card-img-item" alt="House in Ikeja">
+                          <span class="badge badge-house position-absolute"><i class="fas fa-home"></i><span class="ms-2">New House</span></span>
+                        
+                      </div>
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                              <div>
+                                  <i class="fas fa-wifi"></i>
+                                  <i class="fas fa-water ms-2"></i>
+                              </div>
+                          </div>
+                          <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                          <div class="d-flex align-items-center">
+                              <div class="avatar-group ms-3">
+                                <div class="avatar">
+                                  <img src="./assets/images/15.png" alt="Avatar 1">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/16.png" alt="Avatar 2">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/17.png" alt="Avatar 3">
+                                </div>
+                                <div class="total-customer">+25k</div>
+                              </div>
+                              <span class="ms-2 text-muted small">have interest in this property</span>
+                            </div>
+                            <button class="btn-view-more">
+                              View More
+                              <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                              </svg> 
+                            </button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="apartment" role="tabpanel" aria-labelledby="apartment-tab">
+                <div class="g-4 property-carousel owl-carousel owl-theme">
+                  <!-- House 1 -->
+                  <div class="item">
+                      <div class="card property-card border-0 p-3 m-3">
+                          <div class="position-relative d-flex justify-content-center align-items-center">
+                              <img src="./assets/images/2.jpg" class="card-img-item" alt="House in Ikeja">
+                              <span class="badge badge-house position-absolute"><i class="fas fa-home"></i><span class="ms-2">New House</span></span>
+                          </div>
+                          <div class="card-body">
+                              <div class="d-flex justify-content-between align-items-center mb-2">
+                                  <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                                  <div>
+                                      <i class="fas fa-wifi"></i>
+                                      <i class="fas fa-water ms-2"></i>
+                                  </div>
+                              </div>
+                              <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                              <div class="d-flex align-items-center">
+                                  <div class="avatar-group ms-3">
+                                    <div class="avatar">
+                                      <img src="./assets/images/15.png" alt="Avatar 1">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/16.png" alt="Avatar 2">
+                                    </div>
+                                    <div class="avatar">
+                                      <img src="./assets/images/17.png" alt="Avatar 3">
+                                    </div>
+                                    <div class="total-customer">+25k</div>
+                                  </div>
+                                  <span class="ms-2 text-muted small">have interest in this property</span>
+                                </div>
+                                <button class="btn-view-more">
+                                  View More 
+                                  <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                                  </svg>  
+                                </button>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- House 2 -->
+                  <div class="item">
+                    <div class="card property-card border-0 p-3 m-3">
+                      <div class="position-relative d-flex justify-content-center align-items-center">
+                          <img src="./assets/images/3.jpg" class="card-img-item" alt="House in Ikeja">
+                          <span class="badge badge-popular position-absolute"><i class="fas fa-tint"></i><span class="ms-2">Popular</span></span>
+
+                      </div>
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                              <div>
+                                  <i class="fas fa-wifi"></i>
+                                  <i class="fas fa-water ms-2"></i>
+                              </div>
+                          </div>
+                          <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                          <div class="d-flex align-items-center">
+                              <div class="avatar-group ms-3">
+                                <div class="avatar">
+                                  <img src="./assets/images/15.png" alt="Avatar 1">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/16.png" alt="Avatar 2">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/17.png" alt="Avatar 3">
+                                </div>
+                                <div class="total-customer">+25k</div>
+                              </div>
+                              <span class="ms-2 text-muted small">have interest in this property</span>
+                            </div>
+                            <button class="btn-view-more">
+                              View More
+                              <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                              </svg> 
+                            </button>
+                      </div>
+                  </div>
+                  </div>
+                   <!-- House 3 -->
+                   <div class="item">
+                    <div class="card property-card border-0 p-3 m-3">
+                      <div class="position-relative d-flex justify-content-center align-items-center">
+                          <img src="./assets/images/4.jpg" class="card-img-item" alt="House in Ikeja">
+                      </div>
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                              <div>
+                                  <i class="fas fa-wifi"></i>
+                                  <i class="fas fa-water ms-2"></i>
+                              </div>
+                          </div>
+                          <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                          <div class="d-flex align-items-center">
+                              <div class="avatar-group ms-3">
+                                <div class="avatar">
+                                  <img src="./assets/images/15.png" alt="Avatar 1">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/16.png" alt="Avatar 2">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/17.png" alt="Avatar 3">
+                                </div>
+                                <div class="total-customer">+25k</div>
+                              </div>
+                              <span class="ms-2 text-muted small">have interest in this property</span>
+                            </div>
+                            <button class="btn-view-more">
+                              View More
+                              <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                              </svg> 
+                            </button>
+                      </div>
+                  </div>
+                  </div>
+                   <!-- House 4 -->
+                   <div class="item">
+                    <div class="card property-card border-0 p-3 m-3">
+                      <div class="position-relative d-flex justify-content-center align-items-center">
+                          <img src="./assets/images/5.jpg" class="card-img-item" alt="House in Ikeja">
+                          <span class="badge badge-house position-absolute"><i class="fas fa-home"></i><span class="ms-2">New House</span></span>
+                        
+                      </div>
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-2">
+                              <h5 class="card-title mb-0">Ikeja, Lagos</h5>
+                              <div>
+                                  <i class="fas fa-wifi"></i>
+                                  <i class="fas fa-water ms-2"></i>
+                              </div>
+                          </div>
+                          <p class="price-tag mb-3">₦200,000<span class="fs-6">/annum</span></p>
+                          <div class="d-flex align-items-center">
+                              <div class="avatar-group ms-3">
+                                <div class="avatar">
+                                  <img src="./assets/images/15.png" alt="Avatar 1">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/16.png" alt="Avatar 2">
+                                </div>
+                                <div class="avatar">
+                                  <img src="./assets/images/17.png" alt="Avatar 3">
+                                </div>
+                                <div class="total-customer">+25k</div>
+                              </div>
+                              <span class="ms-2 text-muted small">have interest in this property</span>
+                            </div>
+                            <button class="btn-view-more">
+                              View More
+                              <svg width="18" height="12" class="ms-1" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5625 7.99994H20.0938L14.4219 12.3599C14.2906 12.4611 14.1916 12.5777 14.1308 12.7033C14.0699 12.8289 14.0483 12.9609 14.0672 13.0919C14.1052 13.3563 14.3059 13.6002 14.625 13.7699C14.9441 13.9397 15.3555 14.0213 15.7686 13.997C16.1818 13.9726 16.5629 13.8442 16.8281 13.6399L24.6406 7.63994C24.6932 7.59222 24.7402 7.54208 24.7812 7.48994C24.7813 7.43994 24.8594 7.40994 24.8906 7.35994C24.9614 7.24528 24.9985 7.12323 25 6.99994C24.9985 6.87665 24.9614 6.7546 24.8906 6.63994C24.8906 6.58994 24.8125 6.55994 24.7812 6.50994C24.7402 6.4578 24.6932 6.40766 24.6406 6.35994L16.8281 0.359941C16.6812 0.247058 16.4972 0.156278 16.2893 0.0940571C16.0814 0.031836 15.8545 -0.000297707 15.625 -5.91248e-05C15.2599 -0.000515638 14.9061 0.0808597 14.625 0.229941C14.4668 0.31389 14.336 0.41699 14.2401 0.533338C14.1443 0.649685 14.0852 0.776993 14.0663 0.907969C14.0475 1.03895 14.0692 1.17102 14.1302 1.29662C14.1912 1.42223 14.2903 1.53889 14.4219 1.63994L20.0938 5.99994H1.5625C1.1481 5.99994 0.750672 6.1053 0.457646 6.29283C0.16462 6.48037 0 6.73472 0 6.99994C0 7.26516 0.16462 7.51951 0.457646 7.70705C0.750672 7.89458 1.1481 7.99994 1.5625 7.99994Z" fill="white"/>
+                              </svg> 
+                            </button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-holiday-packages mt-3" id="HoliPackages">
+        <div class="container-fluid container-xl">
+          <div class="d-flex flex-column flex-md-row  justify-content-start justify-content-md-between justify-content-lg-between align-items-start align-items-md-center align-items-lg-center">
+               <div class="mb-5 mb-lg-0">
+                 <h2 class="mb-0 font-weight-700 text-primary before-border">POPULAR CITIES</h2>
+               </div>
+               <div>
+                <a href="#" class="explore-more">
+                  Explore More
+                  <svg width="25" height="14" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41.6944 12.9142C42.2802 12.3284 42.2802 11.3786 41.6944 10.7929L32.1485 1.24691C31.5627 0.661127 30.613 0.661127 30.0272 1.24691C29.4414 1.8327 29.4414 2.78245 30.0272 3.36823L38.5125 11.8535L30.0272 20.3388C29.4414 20.9246 29.4414 21.8743 30.0272 22.4601C30.613 23.0459 31.5627 23.0459 32.1485 22.4601L41.6944 12.9142ZM0.0722656 13.3535H40.6338V10.3535H0.0722656V13.3535Z" fill="#FF5722"/>
+                  </svg>                            
+                 </a>
+               </div>
+          </div>
+
+          <div class="row g-4 mt-5">
+            <div class="col-12 col-md-6 col-lg-3 pe-0 pe-sm-0 pe-md-5 pe-lg-5">
+                <div class="city-card">
+                    <img src="./assets/images/7.png" alt="Lagos Bridge">
+                    <div class="city-name">Lagos</div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 pe-0 pe-sm-0 pe-md-5 pe-lg-5">
+                <div class="city-card mt-5">
+                    <img src="./assets/images/8.jpg" alt="Paris Eiffel Tower">
+                    <div class="city-name">Paris</div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 pe-0 pe-sm-0 pe-md-5 pe-lg-5">
+                <div class="city-card mt-5 mt-md-0 mt-lg-0">
+                    <img src="./assets/images/9.jpg" alt="London Big Ben">
+                    <div class="city-name">London</div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 pe-0 pe-sm-0 pe-md-5 pe-lg-5">
+                <div class="city-card mt-5">
+                    <img src="./assets/images/10.jpg" alt="Dubai Burj Al Arab">
+                    <div class="city-name">Dubai</div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+     
+
+      <div class="section-banner mt-7" id="banner">
+        <div class="container-fluid container-xl">
+          <div class="banner">
+            <div class="row g-0 h-100">
+                <div class="col-md-12 banner-content d-flex align-items-center">
+                    <div class="p-5 banner-body">
+                        <h1 class="text-white font-weight-700 mb-2 text-size-30">Become a Host</h1>
+                        <p class="text-white text-size-20 font-weight-500 mb-4">Join thousands of Landlords<br>and earn an extra income.</p>
+                        <button class="btn btn-primary cta-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-section mt-7">
+        <div class="container-fluid container-xl">
+            <h2>What Our Clients are Saying</h2>
+            <div class="quote-mark d-none d-md-block d-lg-block">
+              <svg width="146" height="120" viewBox="0 0 176 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.771866 125.751C27.0171 112.822 40.1395 97.6316 40.1395 80.1782C28.953 78.8853 19.7028 74.3065 12.3885 66.4417C5.0743 58.5769 1.41725 49.4732 1.41725 39.1304C1.41725 28.1412 4.96675 18.8759 12.0659 11.3343C19.165 3.79272 28.0925 0.0219727 38.8488 0.0219727C50.8958 0.0219727 61.3292 4.92395 70.1493 14.728C78.9694 24.5321 83.3794 36.4369 83.3794 50.4428C83.3794 92.4604 59.9312 125.32 13.0339 149.022L0.771866 125.751ZM93.3924 125.751C119.853 112.822 133.083 97.6316 133.083 80.1782C121.681 78.8853 112.323 74.3065 105.009 66.4417C97.6949 58.5769 94.0378 49.4732 94.0378 39.1304C94.0378 28.1412 97.6411 18.8759 104.848 11.3343C112.054 3.79272 121.036 0.0219727 131.792 0.0219727C143.839 0.0219727 154.219 4.92395 162.931 14.728C171.644 24.5321 176 36.4369 176 50.4428C176 92.4604 152.659 125.32 105.977 149.022L93.3924 125.751Z" fill="#ffffff33"/>
+              </svg>
+            </div>
+            
+            <div class="owl-carousel testimonials-carousel owl-theme">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        For a long time, I have been trying to find tenants for my new condo at Atlanta. I found MiCasa and they are very reliable, I never have to leave my work or home, their agents handle the whole negotiations and I get my pay immediately.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="./assets/images/13.png" alt="Paul Cooper">
+                        </div>
+                        <div class="author-info">
+                            <h4>Paul Cooper</h4>
+                            <p>Landlord, Atlanta USA.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        I recently moved into town, and tried getting a new apartment. I have met with a couple of 'Agents' and they couldn't provide what I needed, then I came across MiCasa one day, and got a new apartment in less than a week.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="./assets/images/14.png" alt="Shelly Ann">
+                        </div>
+                        <div class="author-info">
+                            <h4>Shelly Ann</h4>
+                            <p>Tenant</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Testimonial 3 -->
+                 <div class="testimonial-card">
+                  <div class="testimonial-content">
+                      I recently moved into town, and tried getting a new apartment. I have met with a couple of 'Agents' and they couldn't provide what I needed, then I came across MiCasa one day, and got a new apartment in less than a week.
+                  </div>
+                  <div class="testimonial-author">
+                      <div class="author-image">
+                          <img src="./assets/images/14.png" alt="Shelly Ann">
+                      </div>
+                      <div class="author-info">
+                          <h4>Shelly Ann</h4>
+                          <p>Tenant</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-section d-flex align-items-center mt-7">
+      <div class="container-fluid container-xl">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4"></div>
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8 position-relative app-body">
+             <div class="img-app-section">
+               <img src="./assets/images/iPhone.png" alt="MiCasa App" class="app-image">
+             </div>
+             <div>
+              <h2 class="app-title">Manage your projects from your Mobile.</h2>
+              <p class="app-text mt-3">
+                Download the app to manage your projects, keep track of your bookings, and stay on track with the progress.
+              </p>
+              <div class="store-buttons mt-4">
+                <p class="m-0 font-weight-500 mb-2">Get the app</p>
+                <a href="#">
+                  <img src="./assets/images/google-play.png" alt="Get it on Google Play">
+                </a>
+                <a href="#">
+                  <img src="./assets/images/app-store.png" alt="Download on the App Store">
+                </a>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-partner-section d-flex align-items-center mt-7">
+      <div class="container-fluid container-xl">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-5 mb-sm-5 mb-md-0 mb-lg-0 d-flex justify-content-start align-items-center">
+             <div>
+              <h1 class="font-weight-700 mb-2 text-size-30 text-color-1">Our Partners</h1>
+              <p class="m-0 font-weight-500 mb-4 text-color-1">With our over 100,000 partners worldwide, <br>
+                we Provide a wide range of services.</p>
+             </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <img src="./assets/images/12.png" class="img-fluid" alt="12">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="counter-section mt-7">
+      <div class="container-fluid container-xl">
+        <div class="row text-start">
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
+            <div class="counter-box">
+              <h2>40+</h2>
+              <p>Happy Clients</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
+            <div class="counter-box">
+              <h2>540+</h2>
+              <p>Projects Completed</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
+            <div class="counter-box">
+              <h2>300</h2>
+              <p>Dedicated Members</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
+            <div class="counter-box">
+              <h2>25+</h2>
+              <p>Awards Won</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer mt-5">
+      <div class="container-fluid container-xl">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/images/logo.png" alt="logo">
+            </a>
+            <div class="social-icons mt-3">
+              <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white me-2"><i class="fab fa-dribbble"></i></a>
+              <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5>Support</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Status</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5>Stay up to date</h5>
+            <form class="email-input mt-3">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email address" aria-label="Email">
+                <button class="btn btn-warning" type="button">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <p class="m-0 mt-5 copyright text-center">© Copyright FlatFinder 2024</p>
+      </div>
+    </footer>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/plugin/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./assets/plugin/aos/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
